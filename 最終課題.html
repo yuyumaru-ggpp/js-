@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>割り勘アプリ</title>
+    <link rel="stylesheet" href="最終課題.css">
+</head>
+<body>
+    <div class="container">
+        <h1>割り勘計算機</h1>
+
+        <div class="input-group">
+            <label for="totalAmount">総額 (円)</label>
+            <!-- input type="number" を text に変更 -->
+            <input type="text" id="totalAmount">
+        </div>
+
+        <div class="input-group">
+            <label for="numPeople">人数</label>
+            <!-- input type="number" を text に変更 -->
+            <input type="text" id="numPeople">
+        </div>
+
+        <div class="input-group">
+            <label for="adjustAmount">幹事が多めに払う額 (円)</label>
+            <!-- input type="number" を text に変更 -->
+            <input type="text" id="adjustAmount">
+        </div>
+
+        <div class="input-group">
+            <label for="rounding">端数処理</label>
+            <select id="rounding">
+                <option value="round">四捨五入</option>
+                <option value="floor">切り捨て</option>
+                <option value="ceil">切り上げ</option>
+            </select>
+        </div>
+
+        <div class="button-group">
+            <button id="calculate">計算する</button>
+            <button id="clear">クリア</button>
+        </div>
+
+        <div class="result-container">
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script src="最終課題.js"></script>
+</body>
+</html>
